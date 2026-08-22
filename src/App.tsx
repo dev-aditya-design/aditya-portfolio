@@ -6,7 +6,7 @@ const LINKS = {
   linkedin: "https://www.linkedin.com/in/dev-adi-xo",
   github: "https://github.com/dev-aditya-design",
   email: "mailto:dev.adi.xo@gmail.com",
-  resume: "/Aditya_Final_Resume%20(2).pdf",
+  resume: `${import.meta.env.BASE_URL}resume.pdf`,
   resumeAnalyzer: "https://ai-resume-analyzer-aditya.streamlit.app/",
   resumeAnalyzerRepo: "https://github.com/dev-aditya-design/ai-resume-analyzer",
 };
@@ -95,7 +95,7 @@ function App() {
               <div className="orbit o1"/><div className="orbit o2"/>
               <div className="portraitCard">
                 <div className="portraitLabel">AVAILABLE FOR WORK</div>
-                <img src="/assets/aditya-profile.png" alt="Aditya"/>
+                <img src={`${import.meta.env.BASE_URL}assets/aditya-profile.png`} alt="Aditya" />
                 <div className="portraitFoot"><span>AI × SOFTWARE</span><span>REMOTE</span></div>
               </div>
               <motion.div className="floatBadge b1" animate={{y:[0,-10,0],rotate:[-1,2,-1]}} transition={{duration:4,repeat:Infinity,ease:"easeInOut"}}>BUILDING</motion.div>
