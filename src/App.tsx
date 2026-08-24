@@ -22,6 +22,16 @@ const projects = [
     demo: LINKS.resumeAnalyzer,
     source: LINKS.resumeAnalyzerRepo,
   },
+  {
+  id: "02",
+  title: "AI Opportunity Scout",
+  type: "AI Web Application",
+  summary:
+    "AI-powered opportunity discovery tool that helps developers find relevant hackathons, internships, and competitions based on their skills and preferences.",
+  stack: ["Python", "Streamlit", "SerpAPI", "AI", "GitHub"],
+  demo: "https://ai-opportunity-scout-hcgtp6eaurjcva2gpryt2l.streamlit.app/",
+  source: "https://github.com/dev-aditya-design/ai-opportunity-scout",
+},
 ];
 
 const services = [
