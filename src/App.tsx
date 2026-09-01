@@ -16,6 +16,11 @@ const LINKS = {
     "https://ai-opportunity-scout-hcgtp6eaurjcva2gpryt2l.streamlit.app/",
   opportunityScoutRepo:
     "https://github.com/dev-aditya-design/ai-opportunity-scout",
+
+  ironcore: 
+    "https://ironcore-premium-build.lovable.app/",
+ironcoreRepo: 
+  "https://github.com/dev-aditya-design/ironcore-premium-build",
 };
 
 const projects = [
@@ -43,6 +48,18 @@ const projects = [
     previewCode: "opportunities = discover(skills, location)",
     previewFlow: "Search → Match → Apply",
   },
+  {
+  id: "03",
+  title: "IronCore Fitness",
+  type: "Premium Business Website",
+  summary:
+    "A modern, responsive fitness business website featuring training programs, trainer profiles, membership plans, testimonials, FAQ, contact experience, and conversion-focused calls to action.",
+  stack: ["React", "TypeScript", "Responsive Design", "Lovable"],
+  demo: LINKS.ironcore,
+  source: LINKS.ironcoreRepo,
+  previewCode: "Build → Engage → Convert",
+  previewFlow: "Design → Develop → Deploy",
+},
 ];
 
 const services = [
