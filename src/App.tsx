@@ -21,6 +21,11 @@ const LINKS = {
     "https://ironcore-premium-build.lovable.app/",
 ironcoreRepo: 
   "https://github.com/dev-aditya-design/ironcore-premium-build",
+
+  scopePilot: 
+    "https://scopepilot-ai.vercel.app",
+scopePilotRepo: 
+  "https://github.com/dev-aditya-design/scopepilot-ai",
 };
 
 const projects = [
@@ -59,6 +64,25 @@ const projects = [
   source: LINKS.ironcoreRepo,
   previewCode: "Build → Engage → Convert",
   previewFlow: "Design → Develop → Deploy",
+ },
+  {
+  id: "04",
+  title: "ScopePilot AI",
+  type: "AI Project Planning Agent",
+  summary:
+    "AI-powered full-stack application that transforms vague client briefs into structured requirements, tech stack recommendations, milestones, risks, deliverables, and client-ready proposals.",
+  stack: [
+    "React",
+    "Vite",
+    "FastAPI",
+    "Python",
+    "Gemini AI",
+    "REST API",
+  ],
+  demo: LINKS.scopePilot,
+  source: LINKS.scopePilotRepo,
+  previewCode: "brief → AI analysis → project plan",
+  previewFlow: "Brief → Analyze → Plan → Proposal",
 },
 ];
 
