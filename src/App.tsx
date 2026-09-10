@@ -26,6 +26,11 @@ ironcoreRepo:
     "https://scopepilot-ai.vercel.app",
 scopePilotRepo: 
   "https://github.com/dev-aditya-design/scopepilot-ai",
+
+  restaurantDemo:
+  "https://dev-aditya-design.github.io/restaurant-website-demo/",
+restaurantDemoRepo:
+  "https://github.com/dev-aditya-design/restaurant-website-demo",
 };
 
 const projects = [
@@ -83,6 +88,16 @@ const projects = [
   source: LINKS.scopePilotRepo,
   previewCode: "brief → AI analysis → project plan",
   previewFlow: "Brief → Analyze → Plan → Proposal",
+},
+  {
+  number: "05",
+  title: "The Royal Table",
+  subtitle: "Premium Restaurant Website Demo",
+  description:
+    "A premium, responsive restaurant website demo designed for client presentations. It features a modern menu, gallery, offers, customer reviews, table reservation, contact details, WhatsApp CTA, and a polished mobile-friendly experience.",
+  tech: ["HTML", "CSS", "JavaScript"],
+  live: LINKS.restaurantDemo,
+  github: LINKS.restaurantDemoRepo,
 },
 ];
 
