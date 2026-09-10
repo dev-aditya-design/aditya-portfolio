@@ -20,7 +20,7 @@ const LINKS = {
 ironcore:
   "https://ironcore-fitness-gym.vercel.app",
 ironcoreRepo:
-  "https://github.com/dev-aditya-design/ironcore-fitness-website",
+  "https://github.com/dev-aditya-design/ironcore-premium-build",
 
   scopePilot: 
     "https://scopepilot-ai.vercel.app",
