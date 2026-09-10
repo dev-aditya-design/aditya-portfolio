@@ -17,10 +17,10 @@ const LINKS = {
   opportunityScoutRepo:
     "https://github.com/dev-aditya-design/ai-opportunity-scout",
 
-  ironcore: 
-    "https://ironcore-premium-build.lovable.app/",
-ironcoreRepo: 
-  "https://github.com/dev-aditya-design/ironcore-premium-build",
+ironcore:
+  "https://ironcore-fitness-gym.vercel.app",
+ironcoreRepo:
+  "https://github.com/dev-aditya-design/ironcore-fitness-website",
 
   scopePilot: 
     "https://scopepilot-ai.vercel.app",
@@ -28,7 +28,7 @@ scopePilotRepo:
   "https://github.com/dev-aditya-design/scopepilot-ai",
 
   restaurantDemo:
-  "https://dev-aditya-design.github.io/restaurant-website-demo/",
+  "https://royaltable-restaurant.vercel.app",
 restaurantDemoRepo:
   "https://github.com/dev-aditya-design/restaurant-website-demo",
 };
@@ -58,18 +58,18 @@ const projects = [
     previewCode: "opportunities = discover(skills, location)",
     previewFlow: "Search → Match → Apply",
   },
-  {
+{
   id: "03",
   title: "IronCore Fitness",
-  type: "Premium Business Website",
+  type: "Premium Gym Website",
   summary:
-    "A modern, responsive fitness business website featuring training programs, trainer profiles, membership plans, testimonials, FAQ, contact experience, and conversion-focused calls to action.",
-  stack: ["React", "TypeScript", "Responsive Design", "Lovable"],
+    "A premium, responsive fitness website built for gym businesses and client presentations, featuring a bold modern interface, membership-focused sections, training programs, coach information, strong calls to action, and a professional fitness brand experience.",
+  stack: ["React", "TypeScript", "TanStack Start", "CSS"],
   demo: LINKS.ironcore,
   source: LINKS.ironcoreRepo,
-  previewCode: "Build → Engage → Convert",
-  previewFlow: "Design → Develop → Deploy",
- },
+  previewCode: "Programs → Trainers → Membership",
+  previewFlow: "Discover → Train → Transform",
+},
   {
   id: "04",
   title: "ScopePilot AI",
@@ -94,7 +94,7 @@ const projects = [
   title: "The Royal Table",
   type: "Premium Restaurant Website",
   summary:
-    "A premium, responsive restaurant website demo designed for client presentations, featuring menu sections, gallery, offers, reviews, table reservation, contact details, WhatsApp CTA, and a polished mobile-friendly experience.",
+    "A premium, responsive multi-page restaurant website designed for real-world client presentation, featuring an elegant dining experience, menu exploration, gallery, offers, reservations, reviews, and contact information.",
   stack: ["HTML", "CSS", "JavaScript"],
   demo: LINKS.restaurantDemo,
   source: LINKS.restaurantDemoRepo,
