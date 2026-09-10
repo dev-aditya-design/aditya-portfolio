@@ -160,8 +160,8 @@ function App() {
 
       <header className="nav">
         <a className="logo" href="#home">
-          ADITYA<span>↗</span>
-        </a>
+  <img src="/aditya-logo.png" alt="AD Logo" className="navLogo" />
+</a>
 
         <nav className="navLinks">
           <a href="#work">Work</a>
