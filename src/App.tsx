@@ -90,14 +90,16 @@ const projects = [
   previewFlow: "Brief → Analyze → Plan → Proposal",
 },
   {
-  number: "05",
+  id: "05",
   title: "The Royal Table",
-  subtitle: "Premium Restaurant Website Demo",
-  description:
-    "A premium, responsive restaurant website demo designed for client presentations. It features a modern menu, gallery, offers, customer reviews, table reservation, contact details, WhatsApp CTA, and a polished mobile-friendly experience.",
-  tech: ["HTML", "CSS", "JavaScript"],
-  live: LINKS.restaurantDemo,
-  github: LINKS.restaurantDemoRepo,
+  type: "Premium Restaurant Website",
+  summary:
+    "A premium, responsive restaurant website demo designed for client presentations, featuring menu sections, gallery, offers, reviews, table reservation, contact details, WhatsApp CTA, and a polished mobile-friendly experience.",
+  stack: ["HTML", "CSS", "JavaScript"],
+  demo: LINKS.restaurantDemo,
+  source: LINKS.restaurantDemoRepo,
+  previewCode: "Menu → Gallery → Reservation",
+  previewFlow: "Discover → Explore → Reserve",
 },
 ];
 
