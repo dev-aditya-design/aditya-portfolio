@@ -6,6 +6,7 @@ const LINKS = {
   linkedin: "https://www.linkedin.com/in/dev-adi-xo",
   github: "https://github.com/dev-aditya-design",
   email: "mailto:dev.adi.xo@gmail.com",
+  whatsapp: "https://wa.me/919548027373",
   resume: `${import.meta.env.BASE_URL}resume.pdf`,
 
   resumeAnalyzer: "https://ai-resume-analyzer-aditya.streamlit.app/",
@@ -17,25 +18,72 @@ const LINKS = {
   opportunityScoutRepo:
     "https://github.com/dev-aditya-design/ai-opportunity-scout",
 
-ironcore:
-  "https://ironcore-fitness-gym.vercel.app",
-ironcoreRepo:
-  "https://github.com/dev-aditya-design/ironcore-premium-build",
+  ironcore: "https://ironcore-fitness-gym.vercel.app",
+  ironcoreRepo:
+    "https://github.com/dev-aditya-design/ironcore-premium-build",
 
-  scopePilot: 
-    "https://scopepilot-ai.vercel.app",
-scopePilotRepo: 
-  "https://github.com/dev-aditya-design/scopepilot-ai",
+  scopePilot: "https://scopepilot-ai.vercel.app",
+  scopePilotRepo:
+    "https://github.com/dev-aditya-design/scopepilot-ai",
 
-  restaurantDemo:
-  "https://royaltable-restaurant.vercel.app",
-restaurantDemoRepo:
-  "https://github.com/dev-aditya-design/restaurant-website-demo",
+  restaurantDemo: "https://royaltable-restaurant.vercel.app",
+  restaurantDemoRepo:
+    "https://github.com/dev-aditya-design/restaurant-website-demo",
 };
 
 const projects = [
   {
-    id: "01",
+    title: "ScopePilot AI",
+    type: "AI Project Planning Agent",
+    summary:
+      "AI-powered full-stack application that transforms vague client briefs into structured requirements, tech stack recommendations, milestones, risks, deliverables and client-ready proposals.",
+    stack: [
+      "React",
+      "Vite",
+      "FastAPI",
+      "Python",
+      "Gemini AI",
+      "REST API",
+    ],
+    demo: LINKS.scopePilot,
+    source: LINKS.scopePilotRepo,
+    image: "/assets/projects/scopepilot-ai.jpg",
+    featured: true,
+  },
+  {
+    title: "The Royal Table",
+    type: "Premium Restaurant Website",
+    summary:
+      "A premium responsive multi-page restaurant website designed for real-world client presentation with menu exploration, gallery, offers, reservations and contact information.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    demo: LINKS.restaurantDemo,
+    source: LINKS.restaurantDemoRepo,
+    image: "/assets/projects/royal-table.jpg",
+    featured: true,
+  },
+  {
+    title: "IronCore Fitness",
+    type: "Premium Gym Website",
+    summary:
+      "A premium responsive fitness website built for gym businesses and client presentations with training programs, membership-focused sections and strong calls to action.",
+    stack: ["React", "TypeScript", "TanStack Start", "CSS"],
+    demo: LINKS.ironcore,
+    source: LINKS.ironcoreRepo,
+    image: "/assets/projects/ironcore-fitness.jpg",
+    featured: true,
+  },
+  {
+    title: "AI Opportunity Scout",
+    type: "AI Web Application",
+    summary:
+      "AI-powered opportunity discovery tool that helps developers find relevant hackathons, internships and competitions based on their skills and preferences.",
+    stack: ["Python", "Streamlit", "SerpAPI", "AI", "GitHub"],
+    demo: LINKS.opportunityScout,
+    source: LINKS.opportunityScoutRepo,
+    image: "/assets/projects/opportunity-scout.jpg",
+    featured: true,
+  },
+  {
     title: "AI Resume Analyzer",
     type: "AI Application",
     summary:
@@ -43,84 +91,43 @@ const projects = [
     stack: ["Python", "Streamlit", "NLP", "Scikit-learn"],
     demo: LINKS.resumeAnalyzer,
     source: LINKS.resumeAnalyzerRepo,
-    previewCode: "match_score = analyze(resume, role)",
-    previewFlow: "Build → Test → Improve",
+    image: "/assets/projects/resume-analyzer.jpg",
+    featured: false,
   },
-  {
-    id: "02",
-    title: "AI Opportunity Scout",
-    type: "AI Web Application",
-    summary:
-      "AI-powered opportunity discovery tool that helps developers find relevant hackathons, internships, and competitions based on their skills and preferences.",
-    stack: ["Python", "Streamlit", "SerpAPI", "AI", "GitHub"],
-    demo: LINKS.opportunityScout,
-    source: LINKS.opportunityScoutRepo,
-    previewCode: "opportunities = discover(skills, location)",
-    previewFlow: "Search → Match → Apply",
-  },
-{
-  id: "03",
-  title: "IronCore Fitness",
-  type: "Premium Gym Website",
-  summary:
-    "A premium, responsive fitness website built for gym businesses and client presentations, featuring a bold modern interface, membership-focused sections, training programs, coach information, strong calls to action, and a professional fitness brand experience.",
-  stack: ["React", "TypeScript", "TanStack Start", "CSS"],
-  demo: LINKS.ironcore,
-  source: LINKS.ironcoreRepo,
-  previewCode: "Programs → Trainers → Membership",
-  previewFlow: "Discover → Train → Transform",
-},
-  {
-  id: "04",
-  title: "ScopePilot AI",
-  type: "AI Project Planning Agent",
-  summary:
-    "AI-powered full-stack application that transforms vague client briefs into structured requirements, tech stack recommendations, milestones, risks, deliverables, and client-ready proposals.",
-  stack: [
-    "React",
-    "Vite",
-    "FastAPI",
-    "Python",
-    "Gemini AI",
-    "REST API",
-  ],
-  demo: LINKS.scopePilot,
-  source: LINKS.scopePilotRepo,
-  previewCode: "brief → AI analysis → project plan",
-  previewFlow: "Brief → Analyze → Plan → Proposal",
-},
-  {
-  id: "05",
-  title: "The Royal Table",
-  type: "Premium Restaurant Website",
-  summary:
-    "A premium, responsive multi-page restaurant website designed for real-world client presentation, featuring an elegant dining experience, menu exploration, gallery, offers, reservations, reviews, and contact information.",
-  stack: ["HTML", "CSS", "JavaScript"],
-  demo: LINKS.restaurantDemo,
-  source: LINKS.restaurantDemoRepo,
-  previewCode: "Menu → Gallery → Reservation",
-  previewFlow: "Discover → Explore → Reserve",
-},
 ];
 
 const services = [
+  "Web Development",
+  "Application Development",
   "AI Agents & Automation",
   "Animated Websites",
   "UI / UX Design",
-  "Web Development",
-  "Application Development",
   "Portfolio Design",
-  "UGC / Tech Content",
+  "API Integration",
 ];
 
 const skillGroups = [
   {
-    label: "AI & AUTOMATION",
-    items: ["Generative AI", "AI Agents", "Workflow Automation", "n8n"],
+    label: "DEVELOPMENT",
+    items: [
+      "Python",
+      "JavaScript",
+      "React",
+      "HTML",
+      "CSS",
+      "FastAPI",
+      "Git / GitHub",
+    ],
   },
   {
-    label: "DEVELOPMENT",
-    items: ["Python", "JavaScript", "HTML", "CSS", "Git / GitHub"],
+    label: "AI & AUTOMATION",
+    items: [
+      "Generative AI",
+      "Gemini AI",
+      "AI Agents",
+      "Workflow Automation",
+      "n8n",
+    ],
   },
   {
     label: "FOUNDATIONS",
@@ -128,6 +135,7 @@ const skillGroups = [
       "Software Engineering",
       "Problem Solving",
       "Data Structures",
+      "REST APIs",
       "UI / UX",
     ],
   },
@@ -136,9 +144,10 @@ const skillGroups = [
 function App() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
   const [time, setTime] = useState("");
+  const [allProjectsPage, setAllProjectsPage] = useState(false);
 
   useEffect(() => {
-    const update = () =>
+    const update = () => {
       setTime(
         new Intl.DateTimeFormat("en-US", {
           hour: "2-digit",
@@ -146,13 +155,170 @@ function App() {
           hour12: false,
         }).format(new Date())
       );
+    };
 
     update();
-
     const id = setInterval(update, 30000);
 
     return () => clearInterval(id);
   }, []);
+
+  const featuredProjects = projects
+    .filter((project) => project.featured)
+    .slice(0, 4);
+
+  const openAllProjects = () => {
+    setAllProjectsPage(true);
+
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 50);
+  };
+
+  const backToHome = () => {
+    setAllProjectsPage(false);
+
+    setTimeout(() => {
+      document.getElementById("projects")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 50);
+  };
+
+  const renderProjectCard = (
+    project: (typeof projects)[number],
+    index: number
+  ) => (
+    <motion.article
+      className="projectCard"
+      key={project.title}
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      whileHover={{ y: -7 }}
+    >
+      <div className="projectMeta">
+        <span>{String(index + 1).padStart(2, "0")}</span>
+        <span>{project.type}</span>
+      </div>
+
+      <a
+        className="projectImageLink"
+        href={project.demo}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={`Open ${project.title}`}
+      >
+        <div className="projectImageWrap">
+          <img
+            src={project.image}
+            alt={`${project.title} preview`}
+          />
+
+          <div className="projectImageOverlay">
+            <span>View Live Project ↗</span>
+          </div>
+        </div>
+      </a>
+
+      <a
+        className="projectTitleLink"
+        href={project.demo}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <h3>{project.title}</h3>
+      </a>
+
+      <p>{project.summary}</p>
+
+      <div className="stackRow">
+        {project.stack.map((tech) => (
+          <span key={tech}>{tech}</span>
+        ))}
+      </div>
+
+      <div className="projectLinks">
+        <a
+          href={project.demo}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Live ↗
+        </a>
+
+        <a
+          href={project.source}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Source ↗
+        </a>
+      </div>
+    </motion.article>
+  );
+
+  if (allProjectsPage) {
+    return (
+      <div className={`app ${theme}`}>
+        <div className="grain" />
+
+        <header className="nav allProjectsNav">
+          <div />
+
+          <button
+            className="allProjectsBackBtn"
+            onClick={backToHome}
+          >
+            ← Back to Home
+          </button>
+
+          <button
+            className="themeBtn"
+            onClick={() =>
+              setTheme(theme === "light" ? "dark" : "light")
+            }
+          >
+            {theme === "light" ? "BLACK" : "WHITE"}
+          </button>
+        </header>
+
+        <main className="pageWithFixedNav">
+          <section className="section allProjectsPage">
+            <div className="sectionTitle">
+              <span>02</span>
+              <h2>All Projects</h2>
+              <p>Complete collection of my work</p>
+            </div>
+
+            <div className="folderShell">
+              <div className="folderTab">
+                ALL PROJECTS{" "}
+                <span>
+                  / {String(projects.length).padStart(2, "0")}+
+                </span>
+              </div>
+
+              <div className="projectGrid">
+                {projects.map((project, index) =>
+                  renderProjectCard(project, index)
+                )}
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer>
+          <span>© 2026 ADITYA</span>
+          <span>SOFTWARE · WEB · FREELANCE</span>
+        </footer>
+      </div>
+    );
+  }
 
   return (
     <div className={`app ${theme}`}>
@@ -160,10 +326,11 @@ function App() {
 
       <header className="nav">
         <a className="logo" href="#home">
-  ADITYA<span>↗</span>
-</a>
+          ADITYA<span>↗</span>
+        </a>
 
         <nav className="navLinks">
+          <a href="#home">Home</a>
           <a href="#work">Work</a>
           <a href="#projects">Projects</a>
           <a href="#about">About</a>
@@ -179,7 +346,7 @@ function App() {
         </button>
       </header>
 
-      <main>
+      <main className="pageWithFixedNav">
         <section className="hero" id="home">
           <motion.div
             className="heroTop"
@@ -199,14 +366,14 @@ function App() {
               transition={{ delay: 0.15, duration: 0.85 }}
             >
               <p className="kicker">
-                AI DEVELOPER · SOFTWARE ENGINEER
+                SOFTWARE ENGINEER · WEB DEVELOPER
               </p>
 
               <h1>Aditya</h1>
 
               <p className="headline">
-                I build practical digital products with AI,
-                automation and software.
+                I build practical software, responsive websites and
+                digital products with modern development tools.
               </p>
 
               <div className="socialRow">
@@ -232,9 +399,20 @@ function App() {
 
             <motion.div
               className="portraitScene"
-              initial={{ opacity: 0, scale: 0.92, rotateY: -8 }}
-              animate={{ opacity: 1, scale: 1, rotateY: 0 }}
-              transition={{ delay: 0.25, duration: 0.95 }}
+              initial={{
+                opacity: 0,
+                scale: 0.92,
+                rotateY: -8,
+              }}
+              animate={{
+                opacity: 1,
+                scale: 1,
+                rotateY: 0,
+              }}
+              transition={{
+                delay: 0.25,
+                duration: 0.95,
+              }}
             >
               <div className="orbit o1" />
               <div className="orbit o2" />
@@ -250,7 +428,7 @@ function App() {
                 />
 
                 <div className="portraitFoot">
-                  <span>AI × SOFTWARE</span>
+                  <span>FREELANCER</span>
                   <span>REMOTE</span>
                 </div>
               </div>
@@ -282,7 +460,7 @@ function App() {
                   ease: "easeInOut",
                 }}
               >
-                AI + WEB
+                WEB + SOFTWARE
               </motion.div>
             </motion.div>
           </div>
@@ -308,15 +486,15 @@ function App() {
 
           <div className="workIntro">
             <h3>
-              From a clean portfolio to an automated workflow —
+              From modern websites to practical software —
               <br />
               I focus on useful digital work.
             </h3>
 
             <p>
-              Available for part-time freelance projects, remote
-              collaborations and practical product work with clear
-              scope and realistic delivery.
+              Available for freelance projects, internships and remote
+              collaborations with clear scope, practical execution and
+              reliable delivery.
             </p>
           </div>
 
@@ -328,7 +506,9 @@ function App() {
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.05 }}
+                transition={{
+                  delay: index * 0.05,
+                }}
                 whileHover={{
                   y: -4,
                   rotate: index % 2 === 0 ? -1 : 1,
@@ -337,6 +517,7 @@ function App() {
                 <span>
                   {String(index + 1).padStart(2, "0")}
                 </span>
+
                 {item}
               </motion.div>
             ))}
@@ -347,91 +528,34 @@ function App() {
           <div className="sectionTitle">
             <span>02</span>
             <h2>Projects</h2>
-            <p>A growing folder of real work</p>
+            <p>A growing collection of real work</p>
           </div>
 
           <div className="folderShell">
             <div className="folderTab">
               PROJECTS{" "}
               <span>
-                / {String(projects.length).padStart(2, "0")} ITEM
+                / {String(projects.length).padStart(2, "0")}+
               </span>
             </div>
 
             <div className="projectGrid">
-              {projects.map((project) => (
-                <motion.article
-                  className="projectCard"
-                  key={project.id}
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  whileHover={{ y: -7 }}
-                >
-                  <div className="projectMeta">
-                    <span>{project.id}</span>
-                    <span>{project.type}</span>
-                  </div>
+              {featuredProjects.map((project) => {
+                const index = projects.findIndex(
+                  (item) => item.title === project.title
+                );
 
-                  <div className="projectVisual">
-                    <div className="windowBar">
-                      <i />
-                      <i />
-                      <i />
-                    </div>
+                return renderProjectCard(project, index);
+              })}
+            </div>
 
-                    <div className="windowContent">
-                      <strong>{project.title}</strong>
-
-                      <p>{project.previewCode}</p>
-
-                      <span>{project.previewFlow}</span>
-                    </div>
-                  </div>
-
-                  <h3>{project.title}</h3>
-
-                  <p>{project.summary}</p>
-
-                  <div className="stackRow">
-                    {project.stack.map((tech) => (
-                      <span key={tech}>{tech}</span>
-                    ))}
-                  </div>
-
-                  <div className="projectLinks">
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Live ↗
-                    </a>
-
-                    <a
-                      href={project.source}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Source ↗
-                    </a>
-                  </div>
-                </motion.article>
-              ))}
-
-              <div className="projectCard emptyCard">
-                <span>NEXT PROJECT</span>
-
-                <h3>Future work goes here.</h3>
-
-                <p>
-                  New personal projects and client work can be added
-                  to this same folder without changing the rest of
-                  the portfolio.
-                </p>
-
-                <div className="plus">＋</div>
-              </div>
+            <div className="projectsAction">
+              <button
+                className="viewAllBtn"
+                onClick={openAllProjects}
+              >
+                View All Projects →
+              </button>
             </div>
           </div>
         </section>
@@ -440,7 +564,7 @@ function App() {
           <div className="sectionTitle">
             <span>03</span>
             <h2>About</h2>
-            <p>Profile, knowledge and resume</p>
+            <p>Profile, skills and resume</p>
           </div>
 
           <div className="aboutGrid">
@@ -448,21 +572,22 @@ function App() {
               <p className="mini">ABOUT ME</p>
 
               <h3>
-                I’m building toward a career where AI and software
-                engineering meet practical product development.
+                I’m building toward a career in software engineering
+                and modern web development.
               </h3>
 
               <p>
-                My current focus is on learning by building: turning
-                concepts into working software, exploring intelligent
-                automation, improving problem-solving and creating
-                cleaner digital experiences.
+                My focus is on learning by building real software,
+                responsive websites and practical digital products.
+                I work with modern development tools, APIs, AI-assisted
+                workflows and deployment platforms while continuously
+                improving my problem-solving and engineering skills.
               </p>
 
               <p>
-                I’m open to internships, freelance projects and
-                remote collaborations where I can contribute while
-                continuing to grow professionally.
+                I’m open to internships, freelance projects and remote
+                collaborations where I can contribute to useful products
+                and continue growing professionally.
               </p>
 
               <a
@@ -480,10 +605,18 @@ function App() {
                 <motion.div
                   className="skillGroup"
                   key={group.label}
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{
+                    opacity: 0,
+                    x: 20,
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 0,
+                  }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.07 }}
+                  transition={{
+                    delay: index * 0.07,
+                  }}
                 >
                   <span>{group.label}</span>
 
@@ -501,10 +634,29 @@ function App() {
         <section className="contact">
           <p>HAVE A PROJECT OR OPPORTUNITY?</p>
 
-          <h2>Let’s make something useful.</h2>
+          <h2>
+            Let’s build something
+            <br />
+            useful.
+          </h2>
 
-          <div>
-            <a href={LINKS.email}>Email me ↗</a>
+          <p className="contactText">
+            Available for freelance work, internships and remote
+            collaboration.
+          </p>
+
+          <div className="contactLinks">
+            <a href={LINKS.email}>
+              Email me ↗
+            </a>
+
+            <a
+              href={LINKS.whatsapp}
+              target="_blank"
+              rel="noreferrer"
+            >
+              WhatsApp ↗
+            </a>
 
             <a
               href={LINKS.linkedin}
@@ -519,7 +671,7 @@ function App() {
 
       <footer>
         <span>© 2026 ADITYA</span>
-        <span>AI · SOFTWARE · AUTOMATION</span>
+        <span>SOFTWARE · WEB · FREELANCE</span>
       </footer>
     </div>
   );
