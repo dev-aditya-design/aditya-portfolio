@@ -29,6 +29,10 @@ const LINKS = {
   restaurantDemo: "https://royaltable-restaurant.vercel.app",
   restaurantDemoRepo:
     "https://github.com/dev-aditya-design/restaurant-website-demo",
+
+    aurevia: "https://aurevia-properties.vercel.app",
+aureviaRepo:
+ "https://github.com/dev-aditya-design/aurevia-estates",
 };
 
 const projects = [
@@ -73,6 +77,17 @@ const projects = [
     featured: true,
   },
   {
+  title: "Aurevia Estates",
+  type: "Premium Real Estate Website",
+  summary:
+    "A premium multi-page real estate website with property discovery, filtering, detailed listings, agent profiles, enquiry forms, and a responsive luxury interface.",
+  stack: ["React", "Vite", "JavaScript", "CSS", "Vercel"],
+  demo: LINKS.aurevia,
+  source: LINKS.aureviaRepo,
+  image: "/assets/projects/aurevia-estates.jpg",
+  featured: true,
+  },
+  {
     title: "AI Opportunity Scout",
     type: "AI Web Application",
     summary:
@@ -81,7 +96,7 @@ const projects = [
     demo: LINKS.opportunityScout,
     source: LINKS.opportunityScoutRepo,
     image: "/assets/projects/opportunity-scout.jpg",
-    featured: true,
+    featured: false,
   },
   {
     title: "AI Resume Analyzer",
