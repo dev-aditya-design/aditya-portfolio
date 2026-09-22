@@ -1,75 +1,96 @@
-# React + TypeScript + Vite
+# Aditya — Software Engineer & Web Developer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive developer portfolio built to showcase my work, technical capabilities, and approach to building practical digital products.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+I'm Aditya, a BCA student focused on **Software Engineering and Modern Web Development**.
 
-## React Compiler
+I build responsive websites, web applications, and practical software solutions using modern development technologies. Alongside core development, I explore API integrations, AI-assisted workflows, automation, and production deployment.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+My focus is not only on building interfaces, but on creating complete, usable, and maintainable digital products.
 
-## Expanding the ESLint configuration
+I am currently open to **internships, freelance projects, and remote collaboration opportunities**.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Technical Focus
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Software Engineering
+- Frontend Development
+- Web Application Development
+- Responsive Web Design
+- API Integration
+- AI-Assisted Development
+- Workflow Automation
+- UI/UX Fundamentals
+- Git & GitHub
+- Deployment & Production Workflows
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+**Languages**
+- JavaScript
+- TypeScript
+- Python
+- HTML
+- CSS
 
-```
+**Frontend**
+- React
+- Vite
+- Responsive UI Development
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**Development & Tools**
+- Git
+- GitHub
+- REST APIs
+- Vercel
+- Render
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+**AI & Automation**
+- Generative AI
+- AI API Integration
+- AI Agents
+- Workflow Automation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Portfolio Highlights
 
-```
+- Clean and responsive user interface
+- Light and dark themes
+- Mobile-first optimization
+- Reusable React architecture
+- Dedicated project showcase
+- Live project demonstrations
+- GitHub source integration
+- Resume access
+- Direct contact and WhatsApp options
+- Production-ready deployment
+
+## Engineering Approach
+
+I focus on building projects with:
+
+- Clean and maintainable code
+- Reusable components
+- Responsive layouts
+- Practical user experience
+- Structured project architecture
+- Real-world functionality
+- Version control with Git & GitHub
+- Reliable deployment workflows
+
+## Live Portfolio
+
+Visit the portfolio to explore my latest work and projects:
+
+**https://aditya-in.vercel.app**
+
+## Connect With Me
+
+**GitHub:** https://github.com/dev-aditya-design  
+**LinkedIn:** https://www.linkedin.com/in/dev-adi-xo  
+**Email:** dev.adi.xo@gmail.com  
+**Portfolio:** https://aditya-in.vercel.app
+
+---
+
+Built and maintained by **Aditya**.
